@@ -5,7 +5,7 @@ export default function reversePackageExports(
   relativePath: string
 ): string {
   // TODO add an actual matching system and don't just look for the default
-  if (packageJSON.exports?.['./*'] === './dist/*.js') {
+  if (packageJSON.exports?.['./*'] === './dist/*.js' || packageJSON.exports?.['./*']?.default === './dist/*.js') {
     return posix.join(packageJSON.name, relativePath.replace(/^.\/dist\//, `./`).replace(/\.js$/, ''));
   }
 
