@@ -82,6 +82,6 @@ describe('reverse exports', function () {
     };
 
     expect(reversePackageExports(packageJson, './good-things/apple.js')).toBe('my-addon/things/apple.js');
-    expect(reversePackageExports(packageJson, './bad-things/apple.js')).toBe('my-addon/things/apple');
+    expect(reversePackageExports(packageJson, './bad-things/apple.js')).toBe('my-addon/things/apple.js');
   });
 });
