@@ -68,7 +68,7 @@ describe('reverse exports', function () {
       'addon/other-prefix/deep/file'
     );
 
-    expect(reversePackageExports(packageJson, './grod/very/deep/file/deep/file.js')).toBe(
+    expect(reversePackageExports(packageJson, './grod/very/deep/file.js')).toBe(
       'addon/glob/very/deep/file.js'
     );
   });
