@@ -65,7 +65,7 @@ describe('reverse exports', function () {
     expect(reversePackageExports(packageJson, './other-directory/file.js')).toBe('addon/prefix/deep/file.js');
 
     expect(reversePackageExports(packageJson, './yet-another/deep/file.js')).toBe(
-      'addon/other-prefix/deep/file.js'
+      'addon/other-prefix/deep/file'
     );
 
     expect(reversePackageExports(packageJson, './grod/very/deep/file/deep/file.js')).toBe(
