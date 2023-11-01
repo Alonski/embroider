@@ -69,7 +69,7 @@ describe('reverse exports', function () {
     );
 
     expect(reversePackageExports(packageJson, './grod/very/deep/file.js')).toBe(
-      'addon/glob/very/deep/file.js'
+      'addon/glob/very/deep/file'
     );
   });
 
