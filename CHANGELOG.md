@@ -1,5 +1,10 @@
 # Embroider Changelog
 
+
+
+
+
+
 ## Release (2023-11-11)
 
 @embroider/addon-dev 4.1.2 (patch)
